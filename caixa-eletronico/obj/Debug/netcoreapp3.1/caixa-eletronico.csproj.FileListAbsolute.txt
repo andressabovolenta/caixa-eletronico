@@ -1,0 +1,13 @@
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.exe
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.deps.json
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.runtimeconfig.json
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.runtimeconfig.dev.json
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.dll
+C:\repo\caixa-eletronico\caixa-eletronico\bin\Debug\netcoreapp3.1\caixa-eletronico.pdb
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.csprojAssemblyReference.cache
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.AssemblyInfoInputs.cache
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.AssemblyInfo.cs
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.csproj.CoreCompileInputs.cache
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.dll
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.pdb
+C:\repo\caixa-eletronico\caixa-eletronico\obj\Debug\netcoreapp3.1\caixa-eletronico.genruntimeconfig.cache
