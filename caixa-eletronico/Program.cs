@@ -6,32 +6,92 @@ namespace caixa_eletronico
     {
         static void Main(string[] args)
         {
-            //CAIXA-ELETRÔNICO
-            
-            Console.WriteLine("Qual o valor desejado para o saque:");
-            int saque = Convert.ToInt32(Console.ReadLine());                   
+            Console.WriteLine("Insira o valor desejado para saque:");
+            double saque = Convert.ToDouble(Console.ReadLine());
 
-            int nota100 = saque / 100;
-            int resto100 = saque - (nota100 * 100);
-            int nota50 = resto100 / 50;
-            int resto50 = resto100 - (nota50 * 50);
-            int nota20 = resto50 / 20;
-            int resto20 = resto50 - (nota20 * 20);
-            int nota10 = resto20 / 10;
-            int resto10 = resto20 - (nota10 * 10);
-            int nota5 = resto10 / 5;
-            int resto5 = resto10 - (nota5 * 5);
-            int nota2 = resto5 / 2;
+            double debito = saque;
 
-            Console.WriteLine("Serão impressas:");
-            Console.WriteLine(nota100 + " notas de R$100.");
-            Console.WriteLine(nota50 + " notas de R$50.");
-            Console.WriteLine(nota20 + " notas de R$20.");
-            Console.WriteLine(nota10 + " notas de R$10.");
-            Console.WriteLine(nota5 + " notas de R$5.");
-            Console.WriteLine(nota2 + " notas de R$2.");
+            int nota100 = 0;
+            int nota50 = 0;
+            int nota20 = 0;
+            int nota10 = 0;
+            int nota5 = 0;
+            int nota2 = 0;
+            int nota1 = 0;
 
-            //DÚVIDA 1: se o valor do input tem que ser inteiro, como criar um loop para restringir o usuário a digitar apenas números inteiros?
-            //DÚVIDA 2: se o sistema sempre seguir a ordem de verificação de notas, eventualmente vai imprimir um valor aproximado. Como corrigir?
+            while (debito > 0)
+            {
+                if (debito >= 100)
+                {
+                    debito = debito - 100;
+                    nota100 = nota100 + 1;
+                }
+                else
+                {
+                    if (debito >= 50)
+                    {
+                        debito = debito - 50;
+                        nota50 = nota50 + 1;
+                    }
+                    else
+                    {
+                        if (debito >= 20)
+                        {
+                            debito = debito - 20;
+                            nota20 = nota20 + 1;
+                        }
+                        else
+                        {
+                            if (debito >= 10)
+                            {
+                                debito = debito - 10;
+                                nota10 = nota10 + 1;
+                            }
+                            else
+                            {
+                                if (debito >= 5)
+                                {
+                                    debito = debito - 5;
+                                    nota5 = nota5 + 1;
+                                }
+                                else
+                                {
+                                    if (debito >= 2)
+                                    {
+                                        debito = debito - 2;
+                                        nota2 = nota2 + 1;
+                                    }
+                                    else
+                                    {
+                                        if (debito >= 1)
+                                        {
+                                            debito = debito - 1;
+                                            nota1 = nota1 + 1;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Erro!");
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (debito == 0)
+            {
+                Console.WriteLine("Serão impressas:");
+                Console.WriteLine(nota100 + " notas de R$100.");
+                Console.WriteLine(nota50 + " notas de R$50.");
+                Console.WriteLine(nota20 + " notas de R$20.");
+                Console.WriteLine(nota10 + " notas de R$10.");
+                Console.WriteLine(nota5 + " notas de R$5.");
+                Console.WriteLine(nota2 + " notas de R$2.");
+                Console.WriteLine(nota1 + " notas de R$1.");
+            }
+
+        }
     }
 }
